@@ -379,6 +379,6 @@ box-shadow: 0 0.313rem 0.75rem  0 var(--Blue-100-shade);
     text-align: center;
   }
 
-  .attribution a {
+  .attribution .web-site {
     color: var(--Green-500);
   }
