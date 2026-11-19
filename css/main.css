@@ -133,25 +133,38 @@ box-shadow: 0 0.313rem 0.75rem  0 var(--Blue-100-shade);
     margin-inline: auto;
   }
 }
-/* # component # */
 
-/* ## start main ## */
-/* ### start header section ### */
-.hero-section{
+.bg-img{
+  margin: 0;
+  padding: 8rem 4rem 0;
+  text-align: center;
   background-image: url(../images/bg-header-mobile.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.bg-img::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: var(--White);
+  opacity: 0.3;
 }
 
 @media (min-width: 48rem) {
-  .hero-section{
+  .bg-img{
     background-image: url(../images/bg-header-desktop.png);
   }
 }
+/* # component # */
 
+/* ## start main ## */
+/* ### start header section ### */
 .hero-section .container{
-  padding-block: 7rem;
   display: grid;
   grid-template-columns: 1fr;
 }
